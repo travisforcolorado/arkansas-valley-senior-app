@@ -1,0 +1,45 @@
+@import "tailwindcss";
+
+@theme {
+  --color-sage-50: #f4f7f5;
+  --color-sage-100: #e3ebe6;
+  --color-sage-200: #c5d9ce;
+  --color-sage-300: #9ebca8;
+  --color-sage-400: #759b81;
+  --color-sage-500: #547f61;
+  --color-sage-600: #41634b;
+  --color-sage-700: #354f3d;
+
+  --color-sandstone-50: #fdf8f6;
+  --color-sandstone-100: #f9f0ec;
+  --color-sandstone-200: #f2ddd4;
+  --color-sandstone-300: #e6bfb1;
+  --color-sandstone-400: #d59a86;
+  --color-sandstone-500: #bf765e;
+  --color-sandstone-600: #9e5a44;
+
+  --font-sans: "Inter", system-ui, sans-serif;
+}
+
+@layer base {
+  body {
+    @apply bg-slate-50 text-slate-900 font-sans text-lg leading-relaxed;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-bold text-slate-900 tracking-tight;
+  }
+}
+
+.btn-primary {
+  @apply bg-sage-600 text-white px-8 py-5 rounded-2xl shadow-lg hover:bg-sage-700 transition-all transform hover:scale-[1.01] active:scale-[0.98] text-xl font-semibold w-full flex items-center justify-center gap-3;
+}
+
+.card-hover {
+  @apply bg-white border border-slate-200 rounded-3xl p-8 shadow-md hover:shadow-lg transition-all cursor-pointer hover:border-sage-400;
+}
